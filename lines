@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+void main(int argc, char* argv[])
+{
+    int line_count = 0, n_o_c_l = 0, n_o_n_b_l = 0, n_o_b_l = 0, n_e_c = 0;
+    FILE *fp1;
+    char ch;
+    fp1 = fopen(argv[1], "r");
+ 
+    while ((ch = fgetc(fp1))! = EOF)
+    {
+        if (ch  ==  '\n')
+        {
+            line_count++;
+        }
+       
+    printf("Total no of lines: %d\n", line_count)
+    }
+}
