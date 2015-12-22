@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+ {
+   int i,v=1;;
+   do
+   {
+     scanf("%d",i);
+    if(i>0&&i<100)
+    printf("%d",i);
+    else
+     printf("error enter a valid number between 1 to 100");
+    }while(v==1);
+  }
