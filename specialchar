@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<ctype.h>
+#include<conio.h>
+#define low 1
+#define high 0
+ 
+void main() {
+   int nob, now, nod, nov, nos, pos = high;
+   char *str;
+   nob = now = nod = nov = nos = 0;
+   clrscr();
+ 
+   printf("Enter any string : ");
+   gets(str);
+ 
+   while (*str != '\0')
+   {
+         if (!isdigit(*str) && !isalpha(*str))
+         ++nos;
+      str++;
+   }
+ printf("\nNumber of special characters %d", nos);
+ 
+   getch();
+}
