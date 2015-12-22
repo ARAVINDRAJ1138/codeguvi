@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    char line[150];
+    int i,v,c,ch,d,s,o;
+    o=v=c=ch=d=s=0;
+    printf("Enter a line of string:\n");
+    gets(line);
+    for(i=0;line[i]!='\0';++i)
+    {
+       else if(line[i]>='0'&&c<='9')
+            ++d;
+       
+    }
+    
+    printf("\nDigits: %d",d);
+    return 0;
+}
